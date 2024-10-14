@@ -11,12 +11,14 @@ public class Student extends CollegePerson implements LearningPerson{
     // overriding the method from college person
     @Override
     public void stayAtHome() {
-        System.out.println(name +" is studying at home");
+        System.out.println("Student, "+ name +" is studying at home");
     }
 
+
     // print the Student details
-    public void getStudentDetails() {
-        System.out.println("Student ID: "+ collegeId+", Name: "+name+
-                            ", Academic year: "+academicYear);
+    @Override
+    public void goToCollege() {
+        super.goToCollege();
+        System.out.println(", Academic year: "+academicYear);
     }
 }
