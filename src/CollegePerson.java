@@ -9,8 +9,8 @@ public class CollegePerson {
         this.collegeId = collegeId;
     }
 
-    public void goToCollege() {
-        System.out.println("Name: "+ name+", Surname: "+surname+", College ID: "+collegeId);
+    public String goToCollege() {
+        return "Name: "+ name+", Surname: "+surname+", College ID: "+collegeId;
     }
 
 }

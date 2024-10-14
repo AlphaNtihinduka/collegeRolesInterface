@@ -17,8 +17,7 @@ public class Student extends CollegePerson implements LearningPerson{
 
     // print the Student details
     @Override
-    public void goToCollege() {
-        super.goToCollege();
-        System.out.println(", Academic year: "+academicYear);
+    public String goToCollege() {
+        return super.goToCollege()+", Academic year: "+academicYear;
     }
 }

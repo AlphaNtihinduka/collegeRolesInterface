@@ -15,12 +15,11 @@ public class Assistant extends CollegePerson implements TeachingPerson, Learning
 
     @Override
     public void stayAtHome() {
-        System.out.println(name +" is"+ this.getClass().getSimpleName()+" and is studying at home");
+        System.out.println(name +" is "+ this.getClass().getSimpleName()+" and is studying at home");
     }
 
     @Override
-    public void goToCollege() {
-        super.goToCollege();
-        System.out.println(", is Going to be a PHD: "+isGoingToBeAPhD);
+    public String goToCollege() {
+        return super.goToCollege()+", is Going to be a PHD: "+isGoingToBeAPhD;
     }
 }
