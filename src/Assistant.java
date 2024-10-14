@@ -10,7 +10,7 @@ public class Assistant extends CollegePerson implements TeachingPerson, Learning
 
     @Override
     public void teachToOtherPeople(){
-        System.out.println(name+" is"+ this.getClass().getSimpleName()+" is teaching other people");
+        System.out.println(name+" is "+ this.getClass().getSimpleName()+" is teaching other people");
     }
 
     @Override
